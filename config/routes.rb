@@ -1,15 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :customers, controllers: {
-    sessions: 'customers/sessions',
-    passwords: 'customers/passwords',
-    registrations: 'customers/registrations'
-  }
-  devise_for :admin, controllers: {
-    sessions: 'admin/sessions',
-    passwords: 'admin/passwords',
-    registrations: 'admin/registrations'
-  }
-
   namespace :admin do
     get 'order_details/index'
     get 'order_details/show'
@@ -72,5 +61,4 @@ Rails.application.routes.draw do
   get 'homes/top'
   get 'homes/about'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
 end
