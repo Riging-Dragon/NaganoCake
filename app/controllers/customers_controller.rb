@@ -11,4 +11,7 @@ class CustomersController < ApplicationController
 	def update
 	end
 
+	def resign
+	end
+
 end
